@@ -1,10 +1,15 @@
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    table = {}  
+    res = [] 
 
-    return result
+    for a in arrays:
+        for num in a:
+            if num not in table:
+                table[num] = None
+            elif num not in res:
+                    res.append(num)
+
+    return res
 
 
 if __name__ == "__main__":
